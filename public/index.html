@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../src/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=attach_money"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body
+    class="grid h-screen bg-llgreen place-content-center-safe mx-auto space-mono-regular text-[24px]"
+  >
+    <main>
+      <!--LOGO starts-->
+      <div title="LOGO" class="text-center py-8 tracking-wider">
+        <h1 class="space-mono-bold text-3xl text-lgreen">SPLI<br />TTER</h1>
+      </div>
+      <!--LOGO Ends-->
+      <!--Main Starts-->
+      <div
+        title="Main Operation"
+        class="bg-white md:flex box-border py-4 rounded-t-4xl md:rounded-3xl"
+      >
+        <div class="md:flex-col md:space-y-6 md:w-lg md:px-8 md:py-3 max-w-lg">
+          <div title="Bill" class="mx-4 w-sm max-w-md">
+            <h1 class="text-lg">Bill</h1>
+            <!--Bill Area 🛬-->
+            <div
+              title="Bill-Area"
+              class="rounded-xl flex w-sm bg-Igray py-2 px-2 align-middle"
+            >
+              <span class="material-symbols-outlined self-center">
+                attach_money
+              </span>
+              <input
+                type="text"
+                placeholder="Enter bill💵"
+                class="text-right w-sm text-lg font-bold focus:outline-none"
+              />
+            </div>
+          </div>
+          <!--Bill Aera Ends-->
+          <!--Tip Area Starts-->
+          <h1 class="inline-block align-bottom mx-4 py-2 md:py-0 mt-4 text-lg">
+            Select Tip %
+          </h1>
+          <div
+            class="grid grid-rows-3 md:grid-rows-2 grid-cols-2 md:grid-cols-3 gap-6 mx-4 w-sm font-bold text-white max-w-md text-center md:mb-8"
+          >
+            <div
+              class="rounded-lg py-2 bg-lgreen hover:bg-llgreen cursor-pointer hover:text-lgreen"
+            >
+              5%
+            </div>
+            <div
+              class="rounded-lg py-2 bg-lgreen hover:bg-llgreen cursor-pointer hover:text-lgreen"
+            >
+              10%
+            </div>
+            <div
+              class="rounded-lg py-2 bg-lgreen hover:bg-llgreen cursor-pointer hover:text-lgreen"
+            >
+              15%
+            </div>
+            <div
+              class="rounded-lg py-2 bg-lgreen hover:bg-llgreen cursor-pointer hover:text-lgreen"
+            >
+              25%
+            </div>
+            <div
+              class="rounded-lg py-2 bg-lgreen hover:bg-llgreen cursor-pointer hover:text-lgreen"
+            >
+              30%
+            </div>
+            <div
+              class="rounded-lg box-border py-2 bg-lgray text-black content-center-safe focus:bg-white border-black stroke-3 stroke-lgreen"
+            >
+              <input
+                type="text"
+                placeholder="Custom%"
+                class="w-40 focus:outline-0 md:w-20 md:self-center text-center text-white"
+              />
+            </div>
+          </div>
+          <!--Tip Aera Finised!-->
+          <!--Number of People 🕴🕴 -->
+          <div class="mx-4 w-sm max-w-svw mt-4">
+            <h1 class="text-lg text-lgray">Number of People</h1>
+            <div
+              title="No of People Area"
+              class="rounded-xl bg-Igray w-sm flex px-3 py-2 align-middle"
+            >
+              <i class="fa-solid fa-user text-lgray"></i>
+              <input
+                type="text"
+                placeholder="No People"
+                class="text-right w-sm font-bold text-lg focus:outline-none"
+              />
+            </div>
+          </div>
+        </div>
+        <!--Number of People Ends-->
+        <!--Result Area Starts-->
+        <div
+          class="flex-col p-4 md:place-content-center md:w-sm md:space-y-8 text-white m-4 space-y-4 rounded-3xl bg-lgreen"
+        >
+          <div class="flex justify-between py-4 px-2 items-center">
+            <h1 class="font-bold">
+              Tip Amount <br />
+              <span class="font-light text-xl">/ person</span>
+            </h1>
+            <p id="Amount" class="font-bold text-2xl text-Agreen">$4.27</p>
+          </div>
+          <div class="flex justify-between px-2 items-center">
+            <h1 class="font-bold">
+              Total <br />
+              <span class="font-thin text-xl">/ person</span>
+            </h1>
+            <p id="Amount" class="font-bold text-2xl text-Agreen">$4.27</p>
+          </div>
+          <div
+            class="text-center py-2 rounded-lg bg-Agreen hover:bg-llgreen cursor-pointer hover:text-lgreen"
+          >
+            <button class="font-bold text-2xl tracking-wide">RESET</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Mohammed Asif</a>.
+    </div>
+  </body>
+</html>
