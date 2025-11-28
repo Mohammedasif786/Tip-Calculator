@@ -48,7 +48,7 @@
   >
     <main>
       <!--LOGO starts-->
-      <div title="LOGO" class="text-center py-8 tracking-wider">
+      <div title="LOGO" class="text-center py-8 tracking-widest">
         <h1 class="space-mono-bold text-3xl text-lgreen">SPLI<br />TTER</h1>
       </div>
       <!--LOGO Ends-->
@@ -63,7 +63,7 @@
             <!--Bill Area 🛬-->
             <div
               title="Bill-Area"
-              class="rounded-xl flex w-sm bg-Igray py-2 px-2 align-middle"
+              class="rounded-xl focus-within:outline-2 outline-Agreen flex w-sm bg-Igray py-2 px-2 align-middle"
             >
               <span class="material-symbols-outlined self-center">
                 attach_money
@@ -71,6 +71,7 @@
               <input
                 type="text"
                 placeholder="Enter bill💵"
+                id="BillInput"
                 class="text-right w-sm text-lg font-bold focus:outline-none"
               />
             </div>
@@ -121,14 +122,16 @@
           <!--Tip Aera Finised!-->
           <!--Number of People 🕴🕴 -->
           <div class="mx-4 w-sm max-w-svw mt-4">
-            <h1 class="text-lg text-lgray">Number of People</h1>
+            <h1 class="text-lg">Number of People</h1>
             <div
               title="No of People Area"
-              class="rounded-xl bg-Igray w-sm flex px-3 py-2 align-middle"
+              id="NoPeopleBody"
+              class="rounded-xl focus-within:outline-2 outline-Agreen bg-Igray w-sm flex px-3 py-2 align-middle"
             >
               <i class="fa-solid fa-user text-lgray"></i>
               <input
                 type="text"
+                id="NoPeople"
                 placeholder="No People"
                 class="text-right w-sm font-bold text-lg focus:outline-none"
               />
@@ -157,7 +160,7 @@
           <div
             class="text-center py-2 rounded-lg bg-Agreen hover:bg-llgreen cursor-pointer hover:text-lgreen"
           >
-            <button class="font-bold text-2xl tracking-wide">RESET</button>
+            <button class="font-bold cursor-pointer text-2xl tracking-wide">RESET</button>
           </div>
         </div>
       </div>
@@ -168,5 +171,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Mohammed Asif</a>.
     </div>
+
+    <script type="module" src="../src/script.js"></script>
   </body>
 </html>

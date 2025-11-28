@@ -6,8 +6,7 @@
   "name": "tip-calculator-app-main",
   "version": "1.0.0",
   "description": "![Design preview for the Tip calculator app coding challenge](./preview.jpg)",
-  "main": "index.js",
-  "devDependencies": {},
+  "main": "src/index.js",
   "scripts": {
     "tcss": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
     "build": "npm run tcss"
